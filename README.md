@@ -5,6 +5,18 @@ Create two table lik lang_cat and translation. Set basic insrtion for these tabl
 
 The title shoud be 
  $title=$this->seoUrl($this->input->post('title'));
+  
+    public function seoUrl($string) {
+        //Lower case everything
+        $string = strtolower($string);
+        //Make alphanumeric (removes all other characters)
+        $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+        //Clean up multiple dashes or whitespaces
+        $string = preg_replace("/[\s-]+/", " ", $string);
+        //Convert whitespaces and underscore to dash
+        $string = preg_replace("/[\s_]/", "_", $string);
+        return $string;
+    }
 
 CREATE TABLE `lang_cat` (
  `lang_cat_id` bigint(100) NOT NULL AUTO_INCREMENT,
