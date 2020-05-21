@@ -1,5 +1,5 @@
-# Codigniter-Language-files-generated-from-database
-Codigniter Language files generated from database: Each and every changes from the database just click one button it will re write the curresponding lanaguage files.
+# Codeigniter-Language-files-generated-from-database
+Codeigniter Language files generated from database: Each and every changes from the database just click one button it will re write the curresponding lanaguage files.
 
 Create two table lik lang_cat and translation. Set basic insrtion for these tables and also set one button for apply changes. redirect to that transaltion control it will be automatically write your file.
 
